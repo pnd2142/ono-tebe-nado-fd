@@ -83,6 +83,7 @@
 }
 
 .cover__title {
+    
 }
 
 .aligned-text {
@@ -101,7 +102,7 @@
   color: #ffffff;
 }
 
-.aligned-text-center {
+.aligned-text-center { 
   text-align: center;
   font-family: "Raleway";
   font-style: normal;
