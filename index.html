@@ -14,11 +14,16 @@
       <nav class="header__menu">
         <ul class="header__links-list">
           <li
-            class="header__links-list-item header__links-list-item_no-bullit header__link header__link_active">
-            главная
+            class="header__links-list-item header__link_active header__links-list-item_no-bullit"
+          >
+            <a class="header__link">главная</a>
           </li>
-          <li class="header__links-list-item header__link">посмотреть лоты</li>
-          <li class="header__links-list-item header__link">об аукционе</li>
+          <li class="header__links-list-item">
+            <a class="header__link" href="#0">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__link" href="#0">об аукционе</a>
+          </li>
         </ul>
       </nav>
       <a class="header__logo">
@@ -31,14 +36,32 @@
       <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
     </header>
     <main>
       <section class="cover">
-        <h1>Оно тебе надо</h1>
-        <div class="description">
-          <p></p>
-          <button></button>
+        <div class="overlay">
+          <h1 class="cover__title">
+            <span
+              class="aligned-text aligned-text-left letter-spacing-extended"
+            >
+              Оно</span
+            >
+            <span
+              class="aligned-text aligned-text-center letter-spacing-extended"
+              >тебе</span
+            ><span
+              class="aligned-text aligned-text-right letter-spacing-extended no-letter-spacing"
+              >надо</span
+            >
+          </h1>
+          <div class="cover__description">
+            <p class="cover__description-text">
+              Аукцион вещей, в которые никто не верил
+            </p>
+            <button class="bet-button">Сделать ставку</button>
+          </div>
         </div>
       </section>
       <section class="lots">
