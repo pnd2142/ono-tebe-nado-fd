@@ -51,17 +51,22 @@
 
 .address {
   max-width: 240px;
-  justify-self: end;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-self: end;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   text-underline-offset: 0.3em;
+  margin: 0;
+  padding: 0;
+}
+
+.address__header {
+  justify-self: end;
+  align-items: flex-start;
+  justify-self: end;
 }
 
 .cover {
@@ -316,14 +321,17 @@
 }
 
 .footer {
-  padding: 0;
-  margin: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  max-height: 180px;
 }
 
 .address__footer {
-  
+  justify-self: end;
+  align-self: stretch;
+  justify-self: center;
+  max-width: 265px;
+  margin: 10px 75px 82px 50px;
 }
 
 .footer__menu {
@@ -343,18 +351,19 @@
 
 .footer__menu-list {
   list-style: none;
-  padding: 10px 0;
+  padding-top: 10px;
 }
 
 .footer__social-list {
   list-style: none;
   display: flex;
-  justify-self: center;
-  padding: 10px 50px 131px 76px;
+  justify-content: space-between;
+  margin: 10px 50px 131px 77px;
+  max-width: 240px;
+  max-height: 48px;
 }
 
 .footer__social-icon {
   width: 48px;
   height: 48px;
-  
 }
