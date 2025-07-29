@@ -39,14 +39,13 @@
 .header__logo {
   display: block;
   align-items: end;
-  width: 148px;
-  height: 105px;
+  width: 129px;
+  height: 104px;
 }
 
 .header__logo-image {
   margin: 0;
   padding: 0;
-  position: fixed right;
 }
 
 .address {
@@ -72,7 +71,7 @@
 .cover {
   padding: 0;
   margin: 0;
-  height: 757px;
+  min-height: 757px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
@@ -94,7 +93,7 @@
   z-index: 1;
 }
 
-.aligned-text {
+.aligned__text {
   display: block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -105,24 +104,30 @@
   color: #fff;
 }
 
-.aligned-text-left {
+.aligned__text_left {
   text-align: left;
   line-height: 115%;
   transform: translateX(
     0
-  ); /*Свойство для z-index, иначе "Оно" уходит под overlay. По-другому не решили проблему*/
+  ); /*Свойство для z-index, иначе "ОНО" уходит под overlay. По-другому не решили проблему*/
 }
 
-.aligned-text-center {
+.aligned__text_center {
   text-align: center;
   line-height: 157%;
-  transform: translateX(12px);
+  padding-left: 30px;
+  transform: translateX(
+    0
+  ); /*Свойство для z-index, иначе "ТЕБЕ" уходит под overlay. По-другому не решили проблему*/
 }
 
-.aligned-text-right {
+.aligned__text_right {
   text-align: right;
   line-height: 114%;
-  transform: translateX(27px);
+  margin-right: -30px;
+  transform: translateX(
+    0
+  ); /*Свойство для z-index, иначе "НАДО" уходит под overlay. По-другому не решили проблему*/
 }
 
 .cover__description {
@@ -142,10 +147,13 @@
   text-transform: uppercase;
   color: #fff;
   word-spacing: 19px;
-  transform: translateY(12px);
+  padding-top: 12px;
+  transform: translateX(
+    0
+  ); /*Свойство для z-index, иначе текст уходит под overlay. По-другому не решили проблему*/
 }
 
-.bet-button {
+.bet__button {
   padding-left: 0;
   border-style: solid;
   font-family: "Raleway", sans-serif;
@@ -162,7 +170,7 @@
   z-index: 1;
 }
 
-.bet-button-text {
+.bet__button-text {
   padding: 12px 32px;
 }
 
@@ -186,6 +194,7 @@
   list-style: none;
   display: flex;
   gap: 25px;
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
@@ -238,15 +247,15 @@
   z-index: 1;
 }
 
-.card_type_film {
+.card__type_film {
   background-image: url(../images/card-lot-01.jpg);
 }
 
-.card_type_book {
+.card__type_book {
   background-image: url(../images/card-lot-02.jpg);
 }
 
-.card_type_picture {
+.card__type_picture {
   background-image: url(../images/card-lot-03.jpg);
 }
 
@@ -266,7 +275,7 @@
   margin-bottom: 180px;
 }
 
-.about_column {
+.about__column {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 25px;
@@ -278,7 +287,7 @@
   padding: 35px 0 0 47px;
 }
 
-.about__logo-circle {
+.about__logo-border-radius {
   width: 240px;
   height: 240px;
   background-color: #000;
@@ -316,14 +325,13 @@
   gap: 24px;
   grid-column: 2/4;
   grid-row: 2/4;
-  padding: 0;
-  transform: translateY(12px);
+  padding-top: 10px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-height: 180px;
+  margin-top: -12px;
 }
 
 .address__footer {
@@ -354,13 +362,15 @@
   padding-top: 10px;
 }
 
+.footer__menu-link_active .footer__link {
+  text-decoration: none;
+}
+
 .footer__social-list {
   list-style: none;
   display: flex;
   justify-content: space-between;
   margin: 10px 50px 131px 77px;
-  max-width: 240px;
-  max-height: 48px;
 }
 
 .footer__social-icon {
